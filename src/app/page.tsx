@@ -1,7 +1,6 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Card, CardHeader, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { CommandMenu } from "@/components/command-menu";
 import { Metadata } from "next";
 import { Section } from "@/components/ui/section";
 import { GlobeIcon, MailIcon, PhoneIcon } from "lucide-react";
@@ -47,18 +46,6 @@ export default function Page() {
                   </a>
                 </Button>
               ) : null}
-              {RESUME_DATA.contact.tel ? (
-                <Button
-                  className="size-8"
-                  variant="outline"
-                  size="icon"
-                  asChild
-                >
-                  <a href={`tel:${RESUME_DATA.contact.tel}`}>
-                    <PhoneIcon className="size-4" />
-                  </a>
-                </Button>
-              ) : null}
               {RESUME_DATA.contact.social.map((social) => (
                 <Button
                   key={social.name}
@@ -93,13 +80,13 @@ export default function Page() {
           </Avatar>
         </div>
         <Section>
-          <h2 className="text-xl font-bold">About</h2>
+          <h2 className="text-xl font-bold">Acerca de mí</h2>
           <p className="text-pretty font-mono text-sm text-muted-foreground">
             {RESUME_DATA.summary}
           </p>
         </Section>
         <Section>
-          <h2 className="text-xl font-bold">Work Experience</h2>
+          <h2 className="text-xl font-bold">Experiencia Laboral</h2>
           {RESUME_DATA.work.map((work) => {
             return (
               <Card key={work.company}>
@@ -139,7 +126,7 @@ export default function Page() {
           })}
         </Section>
         <Section>
-          <h2 className="text-xl font-bold">Education</h2>
+          <h2 className="text-xl font-bold">Educación</h2>
           {RESUME_DATA.education.map((education) => {
             return (
               <Card key={education.school}>
@@ -159,16 +146,63 @@ export default function Page() {
           })}
         </Section>
         <Section>
-          <h2 className="text-xl font-bold">Skills</h2>
+          <h2 className="text-xl font-bold">Stack Tecnológico</h2>
           <div className="flex flex-wrap gap-1">
             {RESUME_DATA.skills.map((skill) => {
               return <Badge key={skill}>{skill}</Badge>;
             })}
           </div>
         </Section>
+        <Section>
+          <h2 className="text-xl font-bold">Cursos</h2>
+
+          <Card>
+            <CardHeader>
+              <div className="flex items-center justify-between gap-x-2 text-base">
+                <h3 className="font-semibold leading-none">
+                  <a
+                    href={
+                      "https://drive.google.com/file/d/1NHyGU9Wo6t4uw4u_IL7bhbWcyNGGgT3v/view?usp=sharing"
+                    }
+                    target="_blank"
+                    className="inline-flex items-center gap-1 hover:underline"
+                  >
+                    Web Development II
+                  </a>
+                </h3>
+                <div className="text-sm tabular-nums text-gray-500">
+                  mar 2020
+                </div>
+              </div>
+            </CardHeader>
+            <CardContent className="mt-2">By Google.</CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <div className="flex items-center justify-between gap-x-2 text-base">
+                <h3 className="font-semibold leading-none">
+                  <a
+                    href={
+                      "https://drive.google.com/file/d/1yhU7Wn53jLWDNEx2rhamMNcQtIss45VX/view?usp=sharing"
+                    }
+                    target="_blank"
+                    className="inline-flex items-center gap-1 hover:underline"
+                  >
+                    Web Development I
+                  </a>
+                </h3>
+                <div className="text-sm tabular-nums text-gray-500">
+                  feb 2020
+                </div>
+              </div>
+            </CardHeader>
+            <CardContent className="mt-2">By Google.</CardContent>
+          </Card>
+        </Section>
 
         <Section className="print-force-new-page scroll-mb-16">
-          <h2 className="text-xl font-bold">Projects</h2>
+          <h2 className="text-xl font-bold">Proyectos</h2>
           <div className="-mx-3 grid grid-cols-1 gap-3 print:grid-cols-3 print:gap-2 md:grid-cols-2 lg:grid-cols-3">
             {RESUME_DATA.projects.map((project) => {
               return (
@@ -184,19 +218,6 @@ export default function Page() {
           </div>
         </Section>
       </section>
-
-      <CommandMenu
-        links={[
-          {
-            url: RESUME_DATA.personalWebsiteUrl,
-            title: "Personal Website",
-          },
-          ...RESUME_DATA.contact.social.map((socialMediaLink) => ({
-            url: socialMediaLink.url,
-            title: socialMediaLink.name,
-          })),
-        ]}
-      />
     </main>
   );
 }
