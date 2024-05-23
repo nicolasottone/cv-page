@@ -76,10 +76,10 @@ export const RESUME_DATA = {
   skills: [
     "TypeScript",
     "React",
-    "Node.js",
     "Next.js",
-    "tRPC",
     "Tailwind CSS",
+    "Node.js",
+    "tRPC",
     "Radix UI",
     "Langchain",
     "Git/GitLab",
