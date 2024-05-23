@@ -1,6 +1,4 @@
-import {
-  TutoriaLogo,
-} from "@/images/logos";
+import { TutoriaLogo } from "@/images/logos";
 import { GitHubIcon, LinkedInIcon } from "@/components/icons";
 
 export const RESUME_DATA = {
@@ -10,7 +8,7 @@ export const RESUME_DATA = {
   locationLink: "https://www.google.com/maps/place/Buenos+Aires",
   about: "Front-End Developer",
   summary:
-    "Hola! Soy desarrollador de software con 2 años de experiencia en front end y un gran interés en IoT e inteligencia artificial. Comencé mi camino a los 15 años programando microcontroladores en C y Assembler. Me encantan los retos y construir aplicaciones desde cero. Suelo utilizar estas tecnologías: Typescript, React, Tailwind CSS, Node js, React Query, Radix UI, entre otras.",
+    "Front-End Developer with 2+ years of experience building user-friendly and performant web applications. Proven expertise in React, TypeScript, and Next.js, with a strong foundation in clean code and efficient state management. Passionate about leveraging AI and IoT to develop innovative solutions.",
   avatarUrl: "https://avatars.githubusercontent.com/u/64184394?v=4",
   personalWebsiteUrl: "#",
   contact: {
@@ -31,14 +29,14 @@ export const RESUME_DATA = {
   },
   education: [
     {
-      school: "Universidad Tecnológica Nacional",
-      degree: "Ingenieria en Electrónica",
+      school: "Universidad Tecnólogica Nacional",
+      degree: "Electronic Engineering",
       start: "2020",
       end: "2026",
     },
     {
       school: "E.E.S.T. N°9",
-      degree: "Técnico en Electrónica",
+      degree: "Electronic Technician",
       start: "2011",
       end: "2018",
     },
@@ -48,35 +46,34 @@ export const RESUME_DATA = {
       company: "SiliconMind",
       link: "https://siliconmind.ai/",
       badges: [],
-      title: "SSr Front-end developer",
+      title: "Ssr-Front-End Developer",
       start: "2023",
-      end: "actualmente",
+      end: "Present",
       description:
-        "Desarrolle la UI y parte del back en la creación del SaaS TutorIA. Desarrolle la landing page de SiliconMind. Participe en la creación de soluciones basadas en inteligencia artificial, entre las mas frecuentes; chatbots y workflows.",
+        "Developed the UI and part of the backend for the TutorIA SaaS. Developed the SiliconMind landing page. Participated in the creation of artificial intelligence-based solutions, including chatbots and workflows.",
     },
     {
-      company: "Profesor Técnico particular",
+      company: "Private Technical Professor",
       link: "",
       badges: [],
       title: "",
       start: "2020",
       end: "2021",
       description:
-        "Profesor particular orientado a materias técnicas de secundario; matemáticas, teoría de circuitos, digitales, electrónica aplicada, programación en C y Assembler.",
+        "Private tutor focused on technical high school subjects: mathematics, circuit theory, digital electronics, applied electronics, programming in C and Assembly.",
     },
     {
       company: "Instrumentación & Control",
       link: "https://www.calibraciondeinstrumento.com.ar/#home",
       badges: [],
-      title: "Técnico de Laboratorio",
+      title: "Laboratory Technician",
       start: "2019",
       end: "2020",
       description:
-        "Calibración de instrumentos de medición (conductímetros, termo higrómetros, telurimetros, etc.) confección y emisión de certificados, elaboración de perfiles térmicos e informes de autoclaves. Reparación, registro de entrada y salidas de equipos.",
+        "Calibration of measuring instruments (conductivity meters, thermo-hygrometers, earth resistance testers, etc.), preparation and issuance of certificates, preparation of thermal profiles and autoclave reports. Repair, registration of equipment inputs and outputs.",
     },
   ],
   skills: [
-    ,
     "TypeScript",
     "React",
     "Node.js",
@@ -99,7 +96,7 @@ export const RESUME_DATA = {
         "Openai API",
         "Langchain.js",
       ],
-      description: "SaaS hecho para estudiantes con mas de 100 usuarios",
+      description: "SaaS built for students with over 100 users",
       logo: TutoriaLogo,
       link: {
         label: "tutoria.siliconmind.ai",
@@ -110,7 +107,7 @@ export const RESUME_DATA = {
       title: "Web Analytics Tracker",
       techStack: ["TypeScript", "Next.js", "Tremor UI", "Redis", "Tailwind"],
       description:
-        "Registra las visitas, eventos y datos de los usuarios de tu pagina para visualizarlos en un elegante dashboard",
+        "Tracks your website visits, events and user data to display them in an elegant dashboard",
       link: {
         label: "web-analytics-tracker.vercel.app",
         href: "https://web-analytics-tracker.vercel.app/",
@@ -119,7 +116,7 @@ export const RESUME_DATA = {
     {
       title: "SiliconMind Page",
       techStack: ["JavaScript", "React", "Styled Components"],
-      description: "Landing Page de SiliconMind AI",
+      description: "SiliconMind AI Landing Page",
       link: {
         label: "siliconmind.ai",
         href: "https://siliconmind.ai/",
@@ -128,8 +125,7 @@ export const RESUME_DATA = {
     {
       title: "Conversa-Db",
       techStack: ["Next.js", "Drizzle", "Langchain.js", "ReactTable", "LLMs"],
-      description:
-        "Agente de consultas SQL, chatea con tu base de datos de forma natural",
+      description: "SQL query agent, chat with your database naturally",
       link: {
         label: "conversa-db.vercel.app",
         href: "https://conversa-db.vercel.app/",
@@ -139,9 +135,9 @@ export const RESUME_DATA = {
       title: "IoT Firmware",
       techStack: ["C++", "Arduino", "IoT", "RTOS"],
       description:
-        "Monitor de condiciones ambientales, envia y recibe datos en tiempo real a un servidor para ser monitoreados a distancia",
+        "Environmental conditions monitor, sends and receives data in real time to a server to be monitored remotely",
       link: {
-        label: "github.com/nicolasottone/rack-controller-firmwareyy",
+        label: "github.com/nicolasottone/rack-controller-firmware",
         href: "https://github.com/nicolasottone/rack-controller-firmware",
       },
     },
@@ -155,10 +151,10 @@ export const RESUME_DATA = {
         "Radix UI",
         "tRPC",
         "MercadoLibre API",
-        "IA",
+        "AI",
       ],
       description:
-        "SaaS en desarrollo destinado a ser Partner de mercado libre",
+        "SaaS under development intended to be a Mercado Libre Partner",
       link: {
         label: "",
         href: "",
